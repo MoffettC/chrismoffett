@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	width: 100%;
+}
+
+.intro {
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	/*background-image: url('../img/splash.jpg') ;*/
+	background-color: lightblue;
+	display: table;
+	top: 0;
+	background-size: cover;
+}
+
+.intro .inner {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	max-width: none;
+}
+
+.profilepic {
+	margin: auto;
+	padding: 0;
+	border-radius: 50%;
+}
+
+.content {
+	max-width: 500px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.content h1 {
+	padding: 0;
+	margin: 20px;
+	font-family: 'Raleway', sans-serif;
+	color: #F9F3F4;
+	text-shadow: 0px 0px 100 #000;
+	font-size: 500%; /*of default font size approx 16px*/
+}
+
+.btn {
+	border-radius: 9px;
+	font-family: 'Oswald', sans-serif;
+	color: #F9F3F4;
+	font-size: 135%;
+	padding: 10px 20px;
+	border: solid #F9F3F4 3px;
+	/*text-transform: uppercase;*/
+	text-decoration: none; /*remove underline*/
+}
+
+.btn:hover {
+	color: #ff9999;
+	border: solid #ff9999 3px;
+}
+
+.mid {
+	overflow: auto; /*if inner padding breaks out, include in the parent div*/
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	padding: 0;
+}
+
+p {
+	font-size: 100%;
+	line-height: 210%;
+	text-align: justify; 
+	margin: 5%;
+	font-family: sans-serif;
+}
+
+@media screen and (max-width: 768px) { /*ipad*/
+	.content h1 {
+		font-size: 250%;
+	}
+	.btn {
+		font-size: 110%;
+		padding: 7px 15px;
+	}
+	p {
+		font-size: 80%;
+		line-height: 150%;
+	}
+}
