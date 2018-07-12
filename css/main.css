@@ -60,31 +60,43 @@ q, blockquote {
 .navbar{
 	background-color: black;
 }
-.nav-link, .navbar-brand{
+.navbar-inverse .nav-link, .navbar-inverse .navbar-brand{
 	color: #f4f4f4;
 	cursor: pointer;
 }
-.navbar .navbar-nav .nav-brand:hover{
-	background: #f4f4f4;
-	color: black;
-}
-.nav-link{
-	margin-right: 1em !important;
-}
-.nav-link:hover{
-	background: #f4f4f4;
-	color: black;
-}
-.navbar-collapse{
- 	justify-content: flex-end;
-}
-.navbar-toggler{
-  	background:black !important;
-}
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+
+.navbar-inverse .navbar-brand {
+	text-align: center;
+	border-radius: 20px;
+	width: 5%;
+	padding: 3px;
+	margin-left: 10px;
 }
 
+.navbar-inverse .navbar-brand:hover {
+	background: #f4f4f4;
+	color: black;
+}
+
+.navbar-inverse  .nav-link{
+	text-align: center;
+	border-radius: 20px;
+	margin-right: 1em !important;
+}
+.navbar-inverse  .nav-link:hover{
+	background: #f4f4f4;
+	color: black;
+}
+.navbar-inverse  .navbar-collapse{
+ 	justify-content: flex-end;
+ 	align-content: center;
+}
+.navbar-inverse .navbar-toggler{
+  	background:black !important;
+}
+.navbar-inverse .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
 
 /*landing page*/
 
