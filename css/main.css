@@ -139,7 +139,9 @@ q, blockquote {
 .profilepic {
 	margin: auto;
 	padding: 0;
+
 	border-radius: 50%;
+	border: 5px solid #F9F3F4;
 }
 
 .rightbio {
