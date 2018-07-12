@@ -307,7 +307,10 @@ q, blockquote {
         font-size: 100%;
     }
     blockquote:before, blockquote:after {
-        font-size: 80px;
+        font-size: 70px;
+    }
+    blockquote:before {
+        left: 5px;
     }
     blockquote cite{
  		font-size: 100%;
@@ -354,7 +357,7 @@ q, blockquote {
         font-size: 75%;
     }
     blockquote:before, blockquote:after {
-        font-size: 70px;
+        font-size: 60px;
     }
     blockquote cite{
  		font-size: 75%;
