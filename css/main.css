@@ -6,7 +6,56 @@ html, body {
 	padding: 0;
 	height: 100vh;
 	width: 100%;
+
+	-webkit-text-size-adjust: 100%;
 }
+
+q, blockquote {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+   blockquote {
+        color: #616161;
+        font-family: Georgia,serif;
+        font-size: 100%;
+        font-style: italic;
+        line-height: 2;
+        margin: 0.25em 0;
+        padding: 0.25em 40px;
+        position: relative;
+        quotes: "\201C" "\201D";
+        width: 500px;
+        margin: 0 auto;
+    }
+    blockquote:before, blockquote:after {
+        color: #7A7A7A;
+        display: block;
+        font-size: 80px;
+        position: absolute;
+    }
+    blockquote:before {
+        content: open-quote;
+        left: -10px;
+        top: -40px;
+    }
+    blockquote:after {
+        content: close-quote;
+        bottom: -80px;
+        right: 40px;
+    }
+
+    blockquote cite{
+    	font-family: Georgia,serif;
+    	font-style: italic;
+ 		font-size: 80%;
+
+		color: #7A7A7A;
+	    position: absolute;
+	    right: 80px;
+	    bottom: -25px;
+	    text-align: right;
+    }
+
 
 /*landing page*/
 
