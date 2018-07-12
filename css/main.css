@@ -57,6 +57,35 @@ q, blockquote {
     }
 
 
+.navbar{
+	background-color: black;
+}
+.nav-link, .navbar-brand{
+	color: #f4f4f4;
+	cursor: pointer;
+}
+.navbar .navbar-nav .nav-brand:hover{
+	background: #f4f4f4;
+	color: black;
+}
+.nav-link{
+	margin-right: 1em !important;
+}
+.nav-link:hover{
+	background: #f4f4f4;
+	color: black;
+}
+.navbar-collapse{
+ 	justify-content: flex-end;
+}
+.navbar-toggler{
+  	background:black !important;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
 /*landing page*/
 
 .intro {
@@ -91,11 +120,11 @@ q, blockquote {
 	display: flex;
   	align-items: center;
 
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-	-moz-animation: fadein 2s; /* Firefox < 16 */
-	-ms-animation: fadein 2s; /* Internet Explorer */
-	 -o-animation: fadein 2s; /* Opera < 12.1 */
-	    animation: fadein 2s;
+    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 4s; /* Firefox < 16 */
+	-ms-animation: fadein 4s; /* Internet Explorer */
+	 -o-animation: fadein 4s; /* Opera < 12.1 */
+	    animation: fadein 4s;
 }
 
 @keyframes fadein {
@@ -300,7 +329,7 @@ q, blockquote {
 
 @media screen and (max-width: 1268px) { /*ipad*/
 	img {
-    	width: 50%; /* you can use % */
+    	width: 45%; /* you can use % */
     	height: auto;  /*https://stackoverflow.com/questions/787839/resize-image-proportionally-with-css*/
 	}
 	blockquote {
@@ -342,15 +371,25 @@ q, blockquote {
 		font-size: 110%;
 		padding: 7px 15px;
 	}
+	.mid p {
+		font-size: 70%;
+	}
+	.mid2 p {
+		font-size: 70%;
+	}
+	.end p {
+		font-size: 70%;
+	}
+	
 	p {
 		font-size: 80%;
 		line-height: 150%;
 	}
 }
 
-@media screen and (max-width: 375px) { /*iphone6*/
+@media screen and (max-width: 470px) { /*iphone6*/
 	img {
-    	width: 60%; /* you can use % */
+    	width: 45%; /* you can use % */
     	height: auto;  /*https://stackoverflow.com/questions/787839/resize-image-proportionally-with-css*/
 	}
 	blockquote {
@@ -389,6 +428,22 @@ q, blockquote {
 		font-size: 110%;
 		padding: 7px 15px;
 	}
+	.mid .column h2{
+		font-size: 80%;
+	}
+	.mid .column ul{
+		font-size: 75%;
+	}
+	.mid p {
+		font-size: 50%;
+	}
+	.mid2 p {
+		font-size: 50%;
+	}
+	.end p {
+		font-size: 50%;
+	}
+
 	p {
 		font-size: 80%;
 		line-height: 150%;
