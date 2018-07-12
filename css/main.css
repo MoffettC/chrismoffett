@@ -8,22 +8,47 @@ html, body {
 	width: 100%;
 }
 
+/*landing page*/
+
 .intro {
 	height: 100vh;
 	width: 100%;
 	margin: auto;
 	/*background-image: url('../img/splash.jpg') ;*/
-	background-color: lightblue;
-	display: table;
+	background-color: black;
+	/*display: table;*/
 	top: 0;
 	background-size: cover;
 }
 
 .intro .inner {
-	display: table-cell;
-	vertical-align: middle;
-	width: 100%;
-	max-width: none;
+	width: 70%;
+	height: 100%;
+	margin: 0 auto;
+
+	text-align: middle;
+
+	display: flex;
+	flex-wrap: wrap-reverse;
+	justify-content: center;
+}
+
+.leftbio {
+	width: 70%;
+	height: 100%;
+	margin: auto auto;
+	float: left;
+
+	display: flex;
+  	align-items: center;
+}
+.leftbio  p {
+	font-size: 120%;
+	line-height: 250%;
+	text-align: justify; 
+	margin: 5%;
+	font-family:  'Raleway', sans-serif;
+	color: #F9F3F4;
 }
 
 .profilepic {
@@ -32,50 +57,89 @@ html, body {
 	border-radius: 50%;
 }
 
-.content {
+.rightbio {
+	float: right;
+	display: flex;
+	flex-direction: column;
+
+	width: 30%;
 	max-width: 500px;
-	margin: 0 auto;
+	margin: 20% auto;
 	text-align: center;
 }
 
-.content h1 {
+.rightbio h1 {
 	padding: 0;
 	margin: 20px;
 	font-family: 'Raleway', sans-serif;
 	color: #F9F3F4;
 	text-shadow: 0px 0px 100 #000;
-	font-size: 500%; /*of default font size approx 16px*/
+	font-size: 300%; /*of default font size approx 16px*/
 }
 
-.btn {
-	border-radius: 9px;
+.rightbio .btn {
+	min-width: 0; /*overrides flex container width*/
+	width: 10%;
+	margin: 0 auto;
+	padding: 5px 20px;
+
+	border-radius: 7px;
+	border: solid #F9F3F4 3px;
 	font-family: 'Oswald', sans-serif;
 	color: #F9F3F4;
-	font-size: 135%;
-	padding: 10px 20px;
-	border: solid #F9F3F4 3px;
+	font-size: 90%;
+
+	text-align: center;
 	/*text-transform: uppercase;*/
 	text-decoration: none; /*remove underline*/
 }
 
-.btn:hover {
+.rightbio .btn:hover {
 	color: #ff9999;
 	border: solid #ff9999 3px;
 }
 
+/*mid section*/
+
 .mid {
-	overflow: auto; /*if inner padding breaks out, include in the parent div*/
-	height: 100%;
+	/*background-color: black;*/
+	overflow: hidden; /*if inner padding breaks out, include in the parent div*/
+	height: 50%;
 	width: 100%;
-	margin: auto;
+	margin: 0 auto;
 	padding: 0;
 }
 
-p {
+.mid p {
+	margin: 1% 5%;
+	padding: 0;
+
 	font-size: 100%;
 	line-height: 210%;
 	text-align: justify; 
-	margin: 5%;
+	font-family: sans-serif;
+}
+
+/*mid2 section*/
+
+.mid2 {
+	background-color: black;
+
+	overflow: hidden; /*if inner padding breaks out, include in the parent div*/
+	height: 50%;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.mid2 p {
+	margin: 1% 5%;
+	padding: 0;
+
+	color: #F9F3F4;
+	font-size: 100%;
+	line-height: 210%;
+	text-align: justify; 
 	font-family: sans-serif;
 }
 
