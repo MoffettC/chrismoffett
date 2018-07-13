@@ -9,7 +9,6 @@ html, body {
 
 	-webkit-text-size-adjust: 100%;
 }
-
 q, blockquote {
     quotes: "\201C" "\201D" "\2018" "\2019";
 }
@@ -327,6 +326,9 @@ blockquote footer {
 	}
 	blockquote cite {
 		font-size: 0.6em !important;
+	}
+	.mid {
+		padding-top: 54px;
 	}
 	.navbar-inverse .navbar-brand:hover {
 		width: 20%;
