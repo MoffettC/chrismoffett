@@ -21,8 +21,10 @@ blockquote {
     font-style: italic;
 
     line-height: 2;
-    margin: 0.25em 0;
+
+    margin: 0em 0;
     padding: 0.25em 40px;
+
     position: relative;
     quotes: "\201C" "\201D";
 /*    width: 500px;*/
@@ -43,6 +45,9 @@ blockquote:after {
     content: close-quote;
     bottom: -40px;
     right: 40px;
+}
+blockquote footer {
+	margin-bottom: 2em;
 }
 
 /*blockquote cite{
@@ -165,8 +170,8 @@ blockquote:after {
 
 	/*position: absolute;*/
     top: 30%;
-    margin: auto;
-	padding: 2em;
+    margin: 0px;
+	padding: 1em;
 
 /*	float: left;
 	display: flex;
@@ -190,18 +195,8 @@ blockquote:after {
 	color: #F9F3F4;
 }*/
 
-.profilepic {
-	margin: auto;
-	padding: 10;
-
-	border-radius: 50%;
-	border: 5px solid #F9F3F4;
-}
-
 .rightbio {
-	max-width: 100%; /*ensures img is responsive! dont use width!*/
-  	height: auto;
-
+	height: auto;
 	margin: auto;
 	text-align: center;
 }
@@ -213,6 +208,17 @@ blockquote:after {
 	color: #F9F3F4;
 	text-shadow: 0px 0px 100 #000;
 	font-size: 200%; /*of default font size approx 16px*/
+}
+
+.profilepic img{
+	max-width: 100%; /*ensures img is responsive! dont use width!*/
+  	height: auto;
+
+	margin: 10px auto;
+	padding: 10;
+
+	border-radius: 50%;
+	border: 5px solid #F9F3F4;
 }
 
 /*mid section*/
@@ -323,22 +329,43 @@ blockquote:after {
 	font-family: sans-serif;
 }
 
-@media screen and (max-width: 768px) and (orientation: portrait) { /*ipad*/
+@media screen and (max-width: 768px) { /*ipad*/
 	blockquote p {
-    	font-size: 0.8em !important;
+    	font-size: 0.5em !important;
+    	margin-bottom: 2px;
 	}
     blockquote:before {
-        left: 5px;
+        left: -5px;
     }
     blockquote:after {
 	    content: close-quote;
-	    bottom: -40px;
+	    bottom: -20px;
 	    right: 20px;
+	}
+	blockquote cite {
+		font-size: 0.6em !important;
+	}
+	.rightbio {
+		margin-top: 35px;
+	}
+	.rightbio h1 {
+		padding: 0;
+		margin: 1px;
+		font-size: 110%; /*of default font size approx 16px*/
+	}
+	.profilepic {
+		height: auto;
+		/*margin: auto 50%;*/
+		/*width: 50%;*/
+		/*padding: 10px;*/
+	}
+	.leftbio {
+		margin-bottom: 5px;
 	}
 }
 
 @media screen and (max-width: 375px) and (max-device-width: 667px) { /*iphone6*/
-	blockquote p {
+/*	blockquote p {
     	font-size: 0.5em !important;
 	}
 	blockquote:before, blockquote:after {
@@ -353,5 +380,5 @@ blockquote:after {
 	    content: close-quote;
 	    bottom: -10px;
 	    right: 20px;
-	}
+	}*/
 }
