@@ -114,7 +114,6 @@ blockquote footer {
 }
 
 .navbar-inverse  .nav-link{
-	text-align: center;
 	border-radius: 20px;
 	margin-right: 1em !important;
 }
@@ -122,7 +121,8 @@ blockquote footer {
 	background: #f4f4f4;
 	color: black;
 }
-.navbar-inverse  .navbar-collapse{
+.navbar-inverse .navbar-collapse{
+	text-align: center;
  	justify-content: flex-end;
  	align-content: center;
 }

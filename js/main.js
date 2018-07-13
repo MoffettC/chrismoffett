@@ -10,10 +10,10 @@ $('.navbar-nav>li>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
 
-if(screen.width >= 768) {
-    $('.navbar').addClass('navbar-fixed-top');
-    //$('body').css("padding-top", 80);
-} else {
-    $('.navbar').removeClass('navbar-fixed-top navbar-fixed').addClass("navbar-static-top");
-    $('body').css({"padding-top": 0, "margin-top": 0});
-}
+// if(screen.width >= 768) {
+//     $('.navbar').addClass('navbar-fixed-top');
+//     //$('body').css("padding-top", 80);
+// } else {
+//     $('.navbar').removeClass('navbar-fixed-top navbar-fixed').addClass("navbar-static-top");
+//     $('body').css({"padding-top": 0, "margin-top": 0});
+// }
