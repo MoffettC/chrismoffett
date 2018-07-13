@@ -18,161 +18,161 @@
   </head>
 
   <body  data-spy="scroll" data-target="#navbar">
+  	<div> <!-- this div required for navbar to be sticky across entire page! -->
+	    <nav class="navbar sticky-top navbar-inverse navbar-expand-lg " role="navigation" id="navtop">
+			  <a class="navbar-brand" href="#">Home</a>
 
-    <nav class="navbar sticky-top navbar-inverse navbar-expand-lg" role="navigation" id="navtop">
-		  <a class="navbar-brand" href="#">Home</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
 
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		  </button>
+			  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+			    <ul class="navbar-nav mr-4">		      
+			      <li class="nav-item">
+			        <a class="nav-link btn-round" data-value="about" href="#about">Skills</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link btn-round" data-value="contact" href="#contact">Contact</a>
+			      </li>
+			    </ul>		    
+			  </div>
+		</nav>
 
-		  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-		    <ul class="navbar-nav mr-4">		      
-		      <li class="nav-item">
-		        <a class="nav-link btn-round" data-value="about" href="#about">Skills</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link btn-round" data-value="contact" href="#contact">Contact</a>
-		      </li>
-		    </ul>		    
-		  </div>
-	</nav>
+	    <div class="d-flex justify-content-center align-items-center h-100 align-self-start" id="intro">
+	    	<div class="container">
+			    <div class="row flex-column-reverse flex-md-row">
 
-    <div class="d-flex justify-content-center align-items-center h-100" id="intro">
-    	<div class="container">
-		    <div class="row flex-column-reverse flex-md-row">
+				  	<div class="leftbio col-lg-8 col-md-8 col-sm-12 desc ">
+					  	 
+					      <blockquote class="blockquote text-center">
+					      	<p>
+					         	ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						      <footer class="blockquote-footer">
+							  <!--  <cite><a href="http://www.brucelawson.co.uk/2013/on-citing-quotations-again/">Stack Overflow</a></cite> -->
+							  	<cite>Stack Overflow</cite>
+							  </footer>
+							</p>
+					      </blockquote>
+					    
+				  	</div>
 
-			  	<div class="leftbio col-lg-8 col-md-8 col-sm-12 desc ">
-				  	 
-				      <blockquote class="blockquote text-center">
-				      	<p>
-				         	ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				    <div class="rightbio col-lg-4 col-md-4 col-sm-12  ">
+				      	<div class="profilepic">
+				      		<img src="img/team1.JPG" class="img-fluid" height="230" width="230">
+				  		</div>
+				      <h1>Christopher Moffett</h1>
+				    </div>
+
+			    </div>
+			</div>
+	    </div>  
+
+	<!-- <div style="clear: both"></div> -->
+
+	    <div class="mid" id='about'>
+	    	<div class="container ">
+
+	    		<div class="skills row">
+				  <div class="column col-lg-12 col-md-12 col-sm-12">
+	    			<h1>Skills</h1>
+	    		  </div>
+	    		</div>
+
+		        <div class="row">
+				  <div class="column col-lg-4 col-md-4 col-sm-12">
+				  	<h2>Primary</h2>
+
+					  <!-- <h3>Fruits I Like:</h3> -->
+					<ul>
+					  <li>Apples</li>
+					  <li>Bananas</li>
+					  <li>Oranges</li>
+					</ul>
+
+				  </div>
+
+				  <div class="column col-lg-4 col-md-4 col-sm-12">
+				  	<h2>Secondary</h2>
+				  	<ul>
+					  <li>Coffee</li>
+					  <li>Tea</li>
+					  <li>Milk</li>
+					  <li>Apples</li>
+					  <li>Bananas</li>
+					  <li>Oranges</li>
+					</ul> 
+				  </div>
+
+				  <div class="column col-lg-4 col-md-4 col-sm-12">
+				  	<h2>Tertiary</h2>
+				  	<ul>
+					  <li>Coffee</li>
+					  <li>Tea</li>
+					  <li>Milk</li>
+					  <li>Apples</li>
+					  <li>Bananas</li>
+					  <li>Oranges</li>
+					  <li>Coffee</li>
+					  <li>Tea</li>
+					  <li>Milk</li>
+					  <li>Apples</li>
+					  <li>Bananas</li>
+					  <li>Oranges</li>
+					</ul> 
+				  </div>
+
+				</div> 
+			</div>
+	    </div>
+
+	    <div class="mid2">
+		   	<div class="container d-flex h-100">
+				<div class="row justify-content-center align-self-center">
+
+				    <div class="column col-lg-12 col-md-12 col-sm-12 ">
+				    	<div>
+				      <p>
+				         ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 				            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					      <footer class="blockquote-footer">
-						  <!--  <cite><a href="http://www.brucelawson.co.uk/2013/on-citing-quotations-again/">Stack Overflow</a></cite> -->
-						  	<cite>Stack Overflow</cite>
-						  </footer>
-						</p>
-				      </blockquote>
-				    
-			  	</div>
+				      </p>
+				  		</div>
+				    </div>
 
-			    <div class="rightbio col-lg-4 col-md-4 col-sm-12  ">
-			      	<div class="profilepic">
-			      		<img src="img/team1.JPG" class="img-fluid" height="230" width="230">
-			  		</div>
-			      <h1>Christopher Moffett</h1>
-			    </div>
+				    <div class="column col-lg-12 col-md-12 col-sm-12 ">
+				      <p>
+				         ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				      </p>
+				    </div>
 
-		    </div>
-		</div>
-    </div>  
-
-<!-- <div style="clear: both"></div> -->
-
-    <div class="mid" id='about'>
-    	<div class="container">
-
-    		<div class="skills row">
-			  <div class="column col-lg-12 col-md-12 col-sm-12">
-    			<h1>Skills</h1>
-    		  </div>
-    		</div>
-
-	        <div class="row">
-			  <div class="column col-lg-4 col-md-4 col-sm-12">
-			  	<h2>Primary</h2>
-
-				  <!-- <h3>Fruits I Like:</h3> -->
-				<ul>
-				  <li>Apples</li>
-				  <li>Bananas</li>
-				  <li>Oranges</li>
-				</ul>
-
-			  </div>
-
-			  <div class="column col-lg-4 col-md-4 col-sm-12">
-			  	<h2>Secondary</h2>
-			  	<ul>
-				  <li>Coffee</li>
-				  <li>Tea</li>
-				  <li>Milk</li>
-				  <li>Apples</li>
-				  <li>Bananas</li>
-				  <li>Oranges</li>
-				</ul> 
-			  </div>
-
-			  <div class="column col-lg-4 col-md-4 col-sm-12">
-			  	<h2>Tertiary</h2>
-			  	<ul>
-				  <li>Coffee</li>
-				  <li>Tea</li>
-				  <li>Milk</li>
-				  <li>Apples</li>
-				  <li>Bananas</li>
-				  <li>Oranges</li>
-				  <li>Coffee</li>
-				  <li>Tea</li>
-				  <li>Milk</li>
-				  <li>Apples</li>
-				  <li>Bananas</li>
-				  <li>Oranges</li>
-				</ul> 
-			  </div>
-
-			</div> 
-		</div>
-    </div>
-
-    <div class="mid2">
-	   	<div class="container d-flex h-100">
-			<div class="row justify-content-center align-self-center">
-
-			    <div class="column col-lg-12 col-md-12 col-sm-12 ">
-			    	<div>
-			      <p>
-			         ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			      </p>
-			  		</div>
-			    </div>
-
-			    <div class="column col-lg-12 col-md-12 col-sm-12 ">
-			      <p>
-			         ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			      </p>
-			    </div>
-
+				</div>
 			</div>
 		</div>
-	</div>
 
-    <div class="end" id="contact">
-      <p>
-         ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
- 	</div>
-
+	    <div class="end" id="contact">
+	      <p>
+	         ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	      </p>
+	 	</div>
+ </div>
 
     <!-- load js last to show page before loading js -->   
     <script
@@ -190,7 +190,7 @@
     <!-- <script type="text/javascript" src="js/jquery.min.js"></script> -->
     <!-- <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
     <script type="text/javascript" src='js/main.js'></script>
-      
+
   </body>
 
 </html>
