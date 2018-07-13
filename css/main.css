@@ -94,6 +94,8 @@ blockquote footer {
 
 .navbar{
 	background-color: black;
+    width: 100%;
+
 }
 .navbar-inverse .nav-link, .navbar-inverse .navbar-brand{
 	color: #f4f4f4;
@@ -111,6 +113,7 @@ blockquote footer {
 .navbar-inverse .navbar-brand:hover {
 	background: #f4f4f4;
 	color: black;
+	width: 5%;
 }
 
 .navbar-inverse  .nav-link{
@@ -325,9 +328,12 @@ blockquote footer {
 	blockquote cite {
 		font-size: 0.6em !important;
 	}
+	.navbar-inverse .navbar-brand:hover {
+		width: 20%;
+	}
 	.rightbio {
 		width:50%;
-		margin-top: 5px;
+		margin-top: 20px;
 	}
 	.rightbio h1 {
 		padding: 0;
@@ -355,9 +361,12 @@ blockquote footer {
 	blockquote cite {
 		font-size: 0.6em !important;
 	}
+	.navbar-inverse .navbar-brand:hover {
+		width: 10%;
+	}
 	.rightbio {
-		width:25%;
-		margin-top: 35px;
+		width:22%;
+		margin-top: 60px;
 	}
 	.rightbio h1 {
 		padding: 0;
