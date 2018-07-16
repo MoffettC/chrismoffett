@@ -15,7 +15,7 @@ q, blockquote {
 
 blockquote {
     color: #616161;
-    font-family: Georgia, serif;
+    font-family: 'Saira Extra Condensed', serif;
     font-size: 50%;
     font-style: italic;
 
@@ -29,6 +29,7 @@ blockquote {
 /*    width: 500px;*/
     margin: 0 auto;
 }
+
 blockquote:before, blockquote:after {
     color: #7A7A7A;
     display: block;
@@ -126,8 +127,8 @@ blockquote footer {
 }
 .navbar-inverse .navbar-collapse{
 	text-align: center;
- 	justify-content: flex-end;
- 	align-content: center;
+ 	justify-content: flex-start;
+ 	/*align-content: center;*/
 }
 .navbar-inverse .navbar-toggler{
   	background:black !important;
@@ -150,21 +151,24 @@ blockquote footer {
 
 	position: relative;
 
-	display: flex;
+
   	align-items: center;
 }
-
 
 .leftbio {
     top: 30%;
     margin: 0px;
 	padding: 1em;
+	text-align: center;
 
     -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
 	-moz-animation: fadein 4s; /* Firefox < 16 */
 	-ms-animation: fadein 4s; /* Internet Explorer */
 	 -o-animation: fadein 4s; /* Opera < 12.1 */
 	    animation: fadein 4s;
+}
+.leftbio p {
+    text-justify: inter-word;
 }
 
 .rightbio {
@@ -181,6 +185,11 @@ blockquote footer {
 	color: #F9F3F4;
 	text-shadow: 0px 0px 100 #000;
 	font-size: 200%; /*of default font size approx 16px*/
+}
+
+.rightbio a {
+	font-size: 100%;
+	text-align: center;
 }
 
 .profilepic img{
@@ -201,7 +210,7 @@ blockquote footer {
 	min-height: 50%;
 
 	margin: 0 auto;
-	padding: 0;
+	padding-bottom: 30px;
 
 	display: flex;
   	align-items: center;
@@ -211,8 +220,8 @@ blockquote footer {
 	margin: 0 auto;
 	padding: 0;
 	text-align: center;
-	font-family: 'Raleway', sans-serif;
-	font-size: 400%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 300%;
     font-weight: bold;
 }
 
@@ -226,6 +235,11 @@ blockquote footer {
 	padding: 0;
 	width: 100%;
 	font-family: 'Raleway', sans-serif;
+}
+/* Clear floats after the columns */
+.mid .row:after {
+    content: "";
+    clear: both;
 }
 
 .mid .column {
@@ -245,12 +259,6 @@ blockquote footer {
 	text-align: left;
 }
 
-/* Clear floats after the columns */
-.mid .row:after {
-    content: "";
-    clear: both;
-}
-
 .mid p {
 	margin: 1% 5%;
 	padding: 0;
@@ -265,51 +273,48 @@ blockquote footer {
 
 .mid2 {
 	background-color: black;
-	/*overflow: hidden; if inner padding breaks out, include in the parent div*/
 	min-height: 50vh;
-	/*width: 100%;*/
-	/*margin: auto;*/
-	/*padding: 0;*/
-
   	display: flex;
   	align-items: center;
+
 }
 
 .mid2 p {
-	/*margin: 10px;*/
-	/*padding: 0;*/
-	/*width: 60%;*/
-
+	margin: 30px 0 ;
 	color: #F9F3F4;
 	font-size: 100%;
 	line-height: 210%;
-	/*text-align: justify; */
 	font-family: sans-serif;
 }
 
 /*end section*/
 
 .end {
-	/*background-color: black;*/
-	overflow: hidden; /*if inner padding breaks out, include in the parent div*/
 	min-height: 50vh;
-	width: 100%;
-	margin: 0 auto;
-	padding: 0;
-
-	display: flex;
+  	display: flex;
   	align-items: center;
 }
 
 .end p {
-	margin: auto;
-	padding: 0;
-	width: 60%;
-
+	color: black;
 	font-size: 100%;
 	line-height: 210%;
-	text-align: justify; 
 	font-family: sans-serif;
+}
+
+
+@media screen and (max-width: 1024px) and (min-width: 768px)  {
+	.navbar-inverse .navbar-brand {
+		width: 7%;
+		padding: 3px;
+		margin: 0 30px;
+	}
+
+	.navbar-inverse .navbar-brand:hover {
+		width: 7%;
+		padding: 3px;
+		margin: 0 30px;
+	}
 }
 
 @media screen and (max-width: 768px) { /*ipad*/
@@ -328,22 +333,21 @@ blockquote footer {
 	blockquote cite {
 		font-size: 0.6em !important;
 	}
-	.mid {
-		padding-top: 65px;
-	}
 	.navbar-inverse .navbar-brand:hover {
 		width: 20%;
 	}
 
     .navbar-inverse .navbar-collapse {
     	padding-left: 3%;
-	  }
-
-
+	 }
 	.rightbio {
 		width:50%;
 		margin-top: 20px;
 	}
+	.rightbio a {
+		font-size: 70%;
+	}
+
 	.rightbio h1 {
 		padding: 0;
 		margin: 1px;
@@ -352,6 +356,20 @@ blockquote footer {
 	.leftbio {
 		margin-bottom: 5px;
 	}
+	.mid {
+		padding-top: 65px;
+	}
+	.mid li {
+		 line-height:1.5em;
+		 float:left;
+		 display:inline;
+		 width: 50%;
+		 text-align: center;
+	}
+	.end {
+		padding-top: 30px;
+	}
+
 }
 
 @media screen and (max-width: 768px) and (orientation: landscape) { /*ipad*/
@@ -370,30 +388,17 @@ blockquote footer {
 	blockquote cite {
 		font-size: 0.6em !important;
 	}
-/*	#intro{
-		margin: 0;
-		padding: 0;
-		height: 50%;
-	}*/
-	.mid {
-		padding-top: 65px;
+	#intro .row{
+		/*margin-bottom: 20%;*/
 	}
 	.navbar-inverse .navbar-brand:hover {
 		width: 10%;
 	}
-	.navbar-inverse .navbar-collapse {
-    	padding-left: 3%;
-	  }
+
 	.rightbio {
-		width:22%;
-		margin-top: 60px;
+		width:30%;
 	}
-	.rightbio h1 {
-		padding: 0;
-		margin: 1px;
-		font-size: 110%; /*of default font size approx 16px*/
-	}
-	.leftbio {
-		margin-bottom: 5px;
+	.rightbio a {
+		font-size: 50%;
 	}
 }
