@@ -333,6 +333,12 @@ blockquote footer {
 	.navbar-inverse .navbar-brand:hover {
 		width: 20%;
 	}
+
+    .navbar-inverse .navbar-collapse {
+    	padding-left: 3%;
+	  }
+
+
 	.rightbio {
 		width:50%;
 		margin-top: 20px;
@@ -366,6 +372,9 @@ blockquote footer {
 	.navbar-inverse .navbar-brand:hover {
 		width: 10%;
 	}
+	.navbar-inverse .navbar-collapse {
+    	padding-left: 3%;
+	  }
 	.rightbio {
 		width:22%;
 		margin-top: 60px;
