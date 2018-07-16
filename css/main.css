@@ -116,6 +116,7 @@ blockquote footer {
 }
 
 .navbar-inverse  .nav-link{
+	margin-top: 5px;
 	border-radius: 20px;
 	margin-right: 1em !important;
 }
@@ -328,7 +329,7 @@ blockquote footer {
 		font-size: 0.6em !important;
 	}
 	.mid {
-		padding-top: 54px;
+		padding-top: 65px;
 	}
 	.navbar-inverse .navbar-brand:hover {
 		width: 20%;
@@ -368,6 +369,14 @@ blockquote footer {
 	}
 	blockquote cite {
 		font-size: 0.6em !important;
+	}
+/*	#intro{
+		margin: 0;
+		padding: 0;
+		height: 50%;
+	}*/
+	.mid {
+		padding-top: 65px;
 	}
 	.navbar-inverse .navbar-brand:hover {
 		width: 10%;
