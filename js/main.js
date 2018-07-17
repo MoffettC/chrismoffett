@@ -3,7 +3,7 @@ $('.nav-link, .navbar-brand, .new-button').click(function() { //jQuery slim vers
 	var scrollY = 54;
 
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-	 	scrollY = 114;
+	 	scrollY = 180;
 	}
 
     var sectionTo = $(this).attr('href');
