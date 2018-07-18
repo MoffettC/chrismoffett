@@ -202,15 +202,49 @@ blockquote footer {
 	border: 5px solid #F9F3F4;
 }
 
-/*mid section*/
+/*about section*/
+
+.about {
+	min-height: 50vh;
+	margin: 0 auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+	background-color: white;
+  	display: flex;
+  	align-items: center;
+}
+
+
+.about h1{
+	margin: 0 auto;
+	padding: 20px auto;
+
+	color: #4b9eec;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 300%;
+    font-weight: bold;
+}
+
+.about p {
+	margin: 30px 0 ;
+	color: #4b9eec;
+	font-size: 100%;
+	/*line-height: 100%;*/
+	font-family: sans-serif;
+}
+
+/*skills section*/
 
 .mid {
-	/*background-color: black;*/
-	overflow: hidden; /*if inner padding breaks out, include in the parent div*/
+	background-color: #4b9eec;
 	min-height: 50%;
 
 	margin: 0 auto;
+	padding-top: 30px;
 	padding-bottom: 30px;
+
 
 	display: flex;
   	align-items: center;
@@ -219,10 +253,16 @@ blockquote footer {
 .mid h1{
 	margin: 0 auto;
 	padding: 0;
+
+	color: white;
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 300%;
     font-weight: bold;
+}
+
+.mid h2 {
+	color: white;
 }
 
 .mid .skills{
@@ -250,42 +290,94 @@ blockquote footer {
     width: 100%;
 }
 
-.mid .column ul{
+.mid ul{
 	margin: auto;
 	padding: 0;
 
+	color: white;
 	display: inline-block; /*center list in column*/
 	list-style-type: none; /*remove bullets*/
 	text-align: left;
+}
+
+.mid ul.twoColumns {
+  list-style: none;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
 }
 
 .mid p {
 	margin: 1% 5%;
 	padding: 0;
 
+	color: white;
 	font-size: 100%;
 	line-height: 210%;
 	text-align: justify; 
 	font-family: sans-serif;
 }
 
-/*mid2 section*/
+/*resume*/
 
-.mid2 {
-	background-color: black;
-	min-height: 50vh;
-  	display: flex;
-  	align-items: center;
-
+.resume-section {
+	margin: 0 auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
 }
 
-.mid2 p {
-	margin: 30px 0 ;
-	color: #F9F3F4;
-	font-size: 100%;
-	line-height: 210%;
-	font-family: sans-serif;
+.resume-section h2{
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 300%;
+    font-weight: bold;
 }
+
+.resume-section .resume-item .resume-date {
+  min-width: none;
+}
+
+.resume-date .text-primary{
+	font-size: 90%;
+	color: black;
+}
+
+/*projects*/
+
+.projects-section {
+	background-color: #4b9eec;
+
+	margin: 0 auto;
+	padding-top: 30px;
+	padding-bottom: 50px;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.projects-section h2{
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 300%;
+    font-weight: bold;
+}
+
+.projects-section .projects-item .projects-date {
+  min-width: none;
+}
+
+.projects-date .text-primary{
+	font-size: 90%;
+	color: black;
+}
+
 
 /*end section*/
 
@@ -293,10 +385,23 @@ blockquote footer {
 	min-height: 50vh;
   	display: flex;
   	align-items: center;
+  	background-color: black;
+  	padding: 30px 0px 30px 0px;
+}
+
+.end h1{
+	margin: 0 auto;
+	padding: 40px;
+
+	color: white;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 300%;
+    font-weight: bold;
 }
 
 .end p {
-	color: black;
+	color: white;
 	font-size: 100%;
 	line-height: 210%;
 	font-family: sans-serif;
@@ -319,7 +424,7 @@ blockquote footer {
 
 @media screen and (max-width: 768px) { /*ipad*/
 	blockquote p {
-    	font-size: 0.5em !important;
+    	font-size: 0.8em !important;
     	margin-bottom: 2px;
 	}
     blockquote:before {
@@ -351,21 +456,29 @@ blockquote footer {
 	.rightbio h1 {
 		padding: 0;
 		margin: 1px;
-		font-size: 110%; /*of default font size approx 16px*/
+		font-size: 120%; /*of default font size approx 16px*/
 	}
 	.leftbio {
 		margin-bottom: 5px;
 	}
 	.mid {
-		padding-top: 65px;
+		margin-top: 54px;
+		/*padding-top: 65px;*/
 	}
-	.mid li {
+	.mid ul{
+		margin: 0;
+		padding: 0;
+
+		display: block; /*center list in column*/
+		text-align: center;
+	}
+/*	.mid li {
 		 line-height:1.5em;
 		 float:left;
 		 display:inline;
 		 width: 50%;
 		 text-align: center;
-	}
+	}*/
 	.end {
 		padding-top: 30px;
 	}
@@ -374,7 +487,7 @@ blockquote footer {
 
 @media screen and (max-width: 768px) and (orientation: landscape) { /*ipad*/
 	blockquote p {
-    	font-size: 0.5em !important;
+    	font-size: 0.8em !important;
     	margin-bottom: 2px;
 	}
     blockquote:before {
