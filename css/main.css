@@ -333,8 +333,11 @@ blockquote p {
 }
 
 .mid ul.twoColumns {
-  list-style: none;
+  	list-style: none;
+  	text-align: center;
+
     columns: 2;
+    column-gap: 40px;
     -webkit-columns: 2;
     -moz-columns: 2;
 }
