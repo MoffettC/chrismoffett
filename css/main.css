@@ -14,8 +14,9 @@ q, blockquote {
 }
 
 blockquote {
-    color: #616161;
-    font-family: 'Saira Extra Condensed', serif;
+    /*color: #616161;*/
+    color: white;
+    font-family: 'Roboto', serif;
     font-size: 50%;
     font-style: italic;
 
@@ -48,6 +49,9 @@ blockquote:after {
 }
 blockquote footer {
 	margin-bottom: 2em;
+}
+blockquote p {
+	color: white;
 }
 
 /*blockquote cite{
@@ -150,8 +154,6 @@ blockquote footer {
 	background-size: cover;
 
 	position: relative;
-
-
   	align-items: center;
 }
 
@@ -200,6 +202,36 @@ blockquote footer {
 
 	border-radius: 50%;
 	border: 5px solid #F9F3F4;
+}
+
+.icons-list {
+	display: inline-block;
+	margin: 5px 0;
+	padding: 0 4vh;
+	width: 100%;
+}
+.icon {
+	width: 25%;
+}
+
+.list-social-icons a {
+  color: #495057;
+}
+
+.list-social-icons a:hover {
+  color: #BD5D38;
+}
+
+.list-social-icons a .fa-lg {
+  font-size: 1.75rem;
+}
+
+.list-icons {
+  font-size: 1rem;
+}
+
+.list-icons .list-inline-item i:hover {
+  color: #BD5D38;
 }
 
 /*about section*/
@@ -407,8 +439,7 @@ blockquote footer {
 	font-family: sans-serif;
 }
 
-
-@media screen and (max-width: 1024px) and (min-width: 768px)  {
+@media screen and (max-width: 992px)  {
 	.navbar-inverse .navbar-brand {
 		width: 7%;
 		padding: 3px;
@@ -420,11 +451,31 @@ blockquote footer {
 		padding: 3px;
 		margin: 0 30px;
 	}
+	.icons-list {
+		padding-left: 3vh;
+	}
+	.list-social-icons a .fa-lg {
+	  font-size: 1.2rem;
+	}
+
+	.list-icons {
+	  font-size: 1rem;
+	}
 }
 
-@media screen and (max-width: 768px) { /*ipad*/
+@media screen and (max-width: 768px) and (max-height: 1024px){ /*ipad portrait mode*/
+	.icons-list {
+		padding: 0 3vh;
+		width: 100%;
+	}
+	.icon {
+		width: 25%;
+	}
+}
+
+@media screen and (max-width: 768px) and not (max-height: 1024px) { /*non ipad portrait*/
 	blockquote p {
-    	font-size: 0.8em !important;
+    	font-size: 1em !important;
     	margin-bottom: 2px;
 	}
     blockquote:before {
@@ -436,17 +487,16 @@ blockquote footer {
 	    right: 20px;
 	}
 	blockquote cite {
-		font-size: 0.6em !important;
+		font-size: 0.8em !important;
 	}
 	.navbar-inverse .navbar-brand:hover {
 		width: 20%;
 	}
-
     .navbar-inverse .navbar-collapse {
     	padding-left: 3%;
 	 }
 	.rightbio {
-		width:50%;
+		width:70%;
 		margin-top: 20px;
 	}
 	.rightbio a {
@@ -456,7 +506,21 @@ blockquote footer {
 	.rightbio h1 {
 		padding: 0;
 		margin: 1px;
-		font-size: 120%; /*of default font size approx 16px*/
+		font-size: 140%; /*of default font size approx 16px*/
+	}
+	.icons-list {
+		padding: 0 10vh;
+		width: 100%;
+	}
+	.icon {
+		width: 25%;
+	}
+	.list-social-icons a .fa-lg {
+	  font-size: 1.2rem;
+	}
+
+	.list-icons {
+	  font-size: 1rem;
 	}
 	.leftbio {
 		margin-bottom: 5px;
@@ -472,20 +536,12 @@ blockquote footer {
 		display: block; /*center list in column*/
 		text-align: center;
 	}
-/*	.mid li {
-		 line-height:1.5em;
-		 float:left;
-		 display:inline;
-		 width: 50%;
-		 text-align: center;
-	}*/
 	.end {
 		padding-top: 30px;
 	}
-
 }
 
-@media screen and (max-width: 768px) and (orientation: landscape) { /*ipad*/
+@media screen and (max-width: 768px) and (orientation: landscape) { /*landscape for tablet/phone*/
 	blockquote p {
     	font-size: 0.8em !important;
     	margin-bottom: 2px;
@@ -498,8 +554,9 @@ blockquote footer {
 	    bottom: -20px;
 	    right: 20px;
 	}
-	blockquote cite {
-		font-size: 0.6em !important;
+	blockquote-footer cite {
+		color: white;
+		font-size: 0.7em !important;
 	}
 	#intro .row{
 		/*margin-bottom: 20%;*/
@@ -507,11 +564,74 @@ blockquote footer {
 	.navbar-inverse .navbar-brand:hover {
 		width: 10%;
 	}
-
 	.rightbio {
-		width:30%;
+		width:50%;
 	}
 	.rightbio a {
 		font-size: 50%;
+	}
+	.icons-list {
+		padding: 0 3vh;
+		width: 100%;
+	}
+	.icon {
+		width: 25%;
+	}
+/*	.list-social-icons a .fa-lg {
+	  font-size: .8rem;
+	}
+
+	.list-icons {
+	  font-size: .8rem;
+	}*/
+}
+
+@media screen and (max-width: 576px) {
+	blockquote p {
+    	font-size: 0.7em !important;
+	}
+	blockquote:before, blockquote:after {
+	    font-size: 50px;
+	}
+    blockquote:before {
+        left: 30px;
+        top: -28px;
+    }
+    blockquote:after {
+	    content: close-quote;
+	    bottom: 10px;
+	    right: 35px;
+	}
+	blockquote-footer cite {
+		color: white;
+		font-size: 0.7em !important;
+	}
+	.navbar-inverse .navbar-brand:hover {
+		width: 20%;
+	}
+	.rightbio {
+		width:80%;
+		margin-top: 20px;
+	}
+	.rightbio a {
+		font-size: 50%;
+	}
+	.rightbio h1 {
+		padding: 0;
+		margin: 1px;
+		font-size: 140%; /*of default font size approx 16px*/
+	}
+	.icons-list {
+		padding: 0 ;
+	}
+	.icon {
+		width: 25%;
+	}
+	.list-social-icons a .fa-lg {
+	  font-size: 1.2rem;
+	}
+
+	.list-icons {
+	  font-size: 1rem;
 	}
 }
