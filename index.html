@@ -22,7 +22,8 @@
   </head>
 
   <body  data-spy="scroll" data-target="#navbar">
-  	<div> <!-- this div required for navbar to be sticky across entire page! -->
+  	<div class="main"> <!-- this div required for navbar to be sticky across entire page! -->
+
 	    <nav class="navbar sticky-top navbar-inverse navbar-expand-lg " role="navigation" id="navtop">
 			  <a class="navbar-brand" href="#">Home</a>
 
@@ -31,9 +32,12 @@
 			  </button>
 
 			  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-			    <ul class="navbar-nav">		      
+			    <ul class="navbar-nav">
 			      <li class="nav-item">
-			        <a class="nav-link btn-round" data-value="about" href="#about">Skills</a>
+			        <a class="nav-link btn-round" data-value="about" href="#about">About</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link btn-round" data-value="skills" href="#skills">Skills</a>
 			      </li>
 			      <li class="nav-item">
 			        <a class="nav-link btn-round" data-value="contact" href="#contact">Contact</a>
@@ -42,7 +46,7 @@
 			  </div>
 		</nav>
 
-	    <div class="d-flex justify-content-center align-items-center h-100 align-self-start" id="intro">
+	    <div class="d-flex justify-content-center" id="intro">
 	    	<div class="container">
 			    <div class="row flex-column-reverse flex-md-row">
 
@@ -53,9 +57,7 @@
 					         	ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					            consequat. 
 						      <footer class="blockquote-footer">
 							  <!--  <cite><a href="http://www.brucelawson.co.uk/2013/on-citing-quotations-again/">Stack Overflow</a></cite> -->
 							  	<cite>Stack Overflow</cite>
@@ -70,25 +72,51 @@
 				      		<img src="img/team1.JPG" class="img-fluid" height="230" width="230">
 				  		</div>
 				      <h1>Christopher Moffett</h1>
+				      <!-- <a href="mailto:christophmoffett@gmail.com">christophmoffett@gmail.com</a> -->
 				    </div>
 
 			    </div>
 			</div>
 	    </div>  
 
+	    <div class="about" id='about'>
+		   	<div class="container ">
+
+		   	    <div class="row">
+				  <div class="column col-lg-12 col-md-12 col-sm-12">
+	    			<h1>About</h1>
+	    		  </div>
+	    		</div>
+
+				<div class="row justify-content-center align-self-center">
+				    <div class="column col-lg-10 col-md-10 col-sm-12">
+				      <p>
+				         ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				      </p>
+				    </div>
+				</div>
+
+			</div>
+		</div>
+
 	<!-- <div style="clear: both"></div> -->
 
-	    <div class="mid" id='about'>
-	    	<div class="container ">
+	    <div class="mid" id="skills">
+	    	<div class="container">
 
-	    		<div class="skills row">
+	    		<div class="row">
 				  <div class="column col-lg-12 col-md-12 col-sm-12">
 	    			<h1>Skills</h1>
 	    		  </div>
 	    		</div>
 
 		        <div class="row">
-				  <div class="column col-lg-4 col-md-4 col-sm-12">
+				  <div class="primary column col-lg-4 col-md-4 col-sm-12">
 				  	<h2>Primary</h2>
 
 					  <!-- <h3>Fruits I Like:</h3> -->
@@ -100,7 +128,7 @@
 
 				  </div>
 
-				  <div class="column col-lg-4 col-md-4 col-sm-12">
+				  <div class="secondary column col-lg-4 col-md-4 col-sm-12">
 				  	<h2>Secondary</h2>
 				  	<ul>
 					  <li>Coffee</li>
@@ -112,7 +140,7 @@
 					</ul> 
 				  </div>
 
-				  <div class="column col-lg-4 col-md-4 col-sm-12">
+				  <div class="tertiary column col-lg-4 col-md-4 col-sm-12">
 				  	<h2>Tertiary</h2>
 				  	<ul>
 					  <li>Coffee</li>
@@ -134,40 +162,70 @@
 			</div>
 	    </div>
 
-	    <div class="mid2">
-		   	<div class="container d-flex h-100">
-				<div class="row justify-content-center align-self-center">
 
-				    <div class="column col-lg-10 col-md-10 col-sm-10 ">
-				    	<div>
-				      <p>
-				         ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				      </p>
-				  		</div>
-				    </div>
 
-				    <div class="column col-lg-10 col-md-10 col-sm-10 ">
-				      <p>
-				         ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				      </p>
-				    </div>
+	    <div class="resume-section container  d-flex flex-column" id="experience">
+	        <h2 class="mb-5">Experience</h2>
 
-				</div>
-			</div>
-		</div>
+	        <div class="row justify-content-center">
+
+	          <div class="resume-item d-flex flex-column flex-md-row mb-5 col-lg-10 col-md-10 col-sm-10">
+	            <div class="resume-content mr-auto">
+	              <h3 class="mb-0">Senior Web Developer</h3>
+	              <div class="subheading mb-3">Intelitec Solutions</div>
+	              <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+	            </div>
+	            <div class="resume-date text-md-right">
+	              <span class="">Mar 2013 - Present</span>
+	            </div>
+	          </div>
+	      	
+
+	          <div class="resume-item d-flex flex-column flex-md-row mb-5 col-lg-10 col-md-10 col-sm-10">
+	            <div class="resume-content mr-auto">
+	              <h3 class="mb-0">Web Developer</h3>
+	              <div class="subheading mb-3">Intelitec Solutions</div>
+	              <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+	            </div>
+	            <div class="resume-date text-md-right">
+	              <span class="">Dec 2011 - Mar 2013</span>
+	            </div>
+	          </div>
+
+	        </div>
+        </div>
+
+        <div class="projects-section">
+		    <div class="container d-flex flex-column" id="projects">
+		        <h2 class="mb-5">Projects</h2>
+
+		        <div class="row justify-content-center">
+
+		          <div class="projects-item d-flex flex-column flex-md-row mb-5  col-lg-10 col-md-10 col-sm-10">
+			            <div class="projects-content mr-auto">
+			              <h3 class="mb-0">Senior Web Developer</h3>
+			              <div class="subheading mb-3">Intelitec Solutions</div>
+			              <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+			            </div>
+			            <div class="projects-date text-md-right">
+			              <span class="">Mar 2013 - Present</span>
+			            </div>
+		          </div>
+		      
+		      	</div>
+		    </div>
+        </div>
+
+
 
 	    <div class="end" id="contact">
 	    	<div class="container">
+	    		<div class="row">
+				  <div class="column col-lg-12 col-md-12 col-sm-12">
+	    			<h1>Contact</h1>
+	    		  </div>
+	    		</div>
+
 				<div class="row justify-content-center align-self-center">
 			    	<div class="column col-lg-10 col-md-10 col-sm-10 ">
 				      <p>
@@ -182,7 +240,7 @@
 		  		</div>
 		    </div>
 	 	</div>
- </div>
+    </div>
 
     <!-- load js last to show page before loading js -->   
     <script
