@@ -373,12 +373,12 @@ blockquote p {
     font-weight: bold;
 }
 
-.resume-section .resume-item .resume-date {
-  min-width: none;
-}
+/*.resume-section .resume-item .resume-date {
+  min-width: 100%;
+}*/
 
-.resume-date .text-primary{
-	font-size: 90%;
+.resume-date {
+	font-size: 95%;
 	color: black;
 }
 
@@ -409,8 +409,8 @@ blockquote p {
   min-width: none;
 }
 
-.projects-date .text-primary{
-	font-size: 90%;
+.projects-date {
+	font-size: 95%;
 	color: white;
 }
 
@@ -630,6 +630,9 @@ blockquote p {
 	}
 	.icon {
 		width: 25%;
+	}
+	.resume-date {
+		font-size: 80%;
 	}
 	.list-social-icons a .fa-lg {
 	  font-size: 1.2rem;
