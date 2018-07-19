@@ -29,22 +29,58 @@ $(document).ready(function() {
 	    return $(".tertiary li").length > 5
 	}).addClass('twoColumns');
 
-	$(document).ready(function(){       
-	   var scroll_start = 0;
-	   var startchange = $('#about');
-	   var offset = startchange.offset();
+	function watchForHover() {
+	    var hasHoverClass = false;
+	    var container = document.body;
+	    var lastTouchTime = 0;
 
-	   if (startchange.length){
-		   $(document).scroll(function() { 
-		      scroll_start = $(this).scrollTop();
-		      if(scroll_start > offset.top - 100) {
-		          $(".navbar-inverse").css('background-color', '#4b9eec');
-		       } else {
-		          $('.navbar-inverse').css('background-color', '#000000');
-		       }
-		   });
+	    function enableHover() {
+	        // filter emulated events coming from touch events
+	        if (new Date() - lastTouchTime < 500) return;
+	        if (hasHoverClass) return;
+
+	        container.className += ' hasHover';
+	        hasHoverClass = true;
 	    }
-	});
+
+	    function disableHover() {
+	        if (!hasHoverClass) return;
+
+	        container.className = container.className.replace(' hasHover', '');
+	        hasHoverClass = false;
+	    }
+
+	    function updateLastTouchTime() {
+	        lastTouchTime = new Date();
+	    }
+
+	    document.addEventListener('touchstart', updateLastTouchTime, true);
+	    document.addEventListener('touchstart', disableHover, true);
+	    document.addEventListener('mousemove', enableHover, true);
+
+	    enableHover();
+	}
+
+	watchForHover();
+
+
+//Navbar color change
+	// $(document).ready(function(){       
+	//    var scroll_start = 0;
+	//    var startchange = $('#about');
+	//    var offset = startchange.offset();
+
+	//    if (startchange.length){
+	// 	   $(document).scroll(function() { 
+	// 	      scroll_start = $(this).scrollTop();
+	// 	      if(scroll_start > offset.top - 100) {
+	// 	          $(".navbar-inverse").css('background-color', '#4b9eec');
+	// 	       } else {
+	// 	          $('.navbar-inverse').css('background-color', '#000000');
+	// 	       }
+	// 	   });
+	//     }
+	// });
 
 });
 //Scrolling effect....
