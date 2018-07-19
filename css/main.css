@@ -342,17 +342,6 @@ blockquote p {
     -moz-columns: 2;
 }
 
-.mid p {
-	margin: 1% 5%;
-	padding: 0;
-
-	color: white;
-	font-size: 100%;
-	line-height: 210%;
-	text-align: justify; 
-	font-family: sans-serif;
-}
-
 /*resume*/
 
 .resume-section {
@@ -574,6 +563,9 @@ blockquote p {
 	.rightbio a {
 		font-size: 50%;
 	}
+	.mid ul.twoColumns {
+    	column-gap: 75px;
+	}
 	.icons-list {
 		padding: 0 3vh;
 		width: 100%;
@@ -630,6 +622,12 @@ blockquote p {
 	}
 	.icon {
 		width: 25%;
+	}
+	.mid .column {
+		margin: 5px auto;
+	}
+	.mid ul.twoColumns {
+    	column-gap: 70px;
 	}
 	.resume-date {
 		font-size: 80%;
