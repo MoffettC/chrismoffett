@@ -7,7 +7,7 @@ $(document).ready(function() {
 		var scrollY = 54;
 
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-		 	scrollY = 180;
+		 	scrollY = 250;
 		}
 
 	    var sectionTo = $(this).attr('href');

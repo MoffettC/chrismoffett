@@ -256,6 +256,12 @@ blockquote p {
 	margin-left: 10px;
 }
 
+.navbar-inverse .navbar-brand:hover {
+	background: #f4f4f4;
+	color: red;
+	width: 5%;
+}
+
 .navbar-inverse .navbar-brand.hasHover:hover {
 	background: #f4f4f4;
 	color: black;
@@ -515,10 +521,6 @@ blockquote p {
     font-weight: bold;
 }
 
-/*.resume-section .resume-item .resume-date {
-  min-width: 100%;
-}*/
-
 .resume-date {
 	font-size: 95%;
 	color: black;
@@ -540,7 +542,7 @@ blockquote p {
 
 .projects-section h2{
 	margin: 0 auto;
-	padding: 0;
+	padding-top: 20px;
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 300%;
@@ -599,7 +601,7 @@ blockquote p {
 		margin: 0 30px;
 	}
 
-	.navbar-inverse .navbar-brand:hover {
+	.navbar-inverse .navbar-brand.hasHover:hover {
 		width: 7%;
 		padding: 3px;
 		margin: 0 30px;
@@ -668,7 +670,7 @@ blockquote p {
 	blockquote cite {
 		font-size: 0.8em !important;
 	}
-	.navbar-inverse .navbar-brand:hover {
+	.navbar-inverse .navbar-brand.hasHover:hover {
 		width: 20%;
 	}
     .navbar-inverse .navbar-collapse {
@@ -745,7 +747,7 @@ blockquote p {
 	#intro .row{
 		/*margin-bottom: 20%;*/
 	}
-	.navbar-inverse .navbar-brand:hover {
+	.navbar-inverse .navbar-brand.hasHover:hover {
 		width: 10%;
 	}
 	.rightbio {
@@ -799,7 +801,7 @@ blockquote p {
 		color: white;
 		font-size: 0.7em !important;
 	}
-	.navbar-inverse .navbar-brand:hover {
+	.navbar-inverse .navbar-brand.hasHover:hover {
 		width: 20%;
 	}
 	.rightbio {
