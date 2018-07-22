@@ -451,6 +451,18 @@ blockquote p {
 		padding: 3px;
 		margin: 0 30px;
 	}
+	.rightbio {
+	height: auto;
+	margin: auto;
+	/*margin-bottom: 50px;*/
+	text-align: center;
+	}
+
+	.rightbio h1 {
+		padding: 0;
+		margin: 10px;
+		font-size: 150%; /*of default font size approx 16px*/
+	}
 	.icons-list {
 		padding-left: 3vh;
 	}
@@ -470,12 +482,14 @@ blockquote p {
 }
 
 @media screen and (max-width: 768px) and (max-height: 1024px){ /*ipad portrait mode*/
-	.icons-list {
-		padding: 0 3vh;
+	#intro .icons-list {
+		padding: 0px;
 		width: 100%;
 	}
-	.icon {
+	#intro .icon {
 		width: 25%;
+	}
+	.end .icon {
 		margin: auto 20px;
 	}
 }
