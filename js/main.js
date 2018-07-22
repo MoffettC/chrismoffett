@@ -35,9 +35,11 @@ $(document).ready(function() {
 	}).addClass('twoColumns');
 
 
-	if (!hasTouch()) {
-	    document.getElementsByClassName('navbar-brand').className += ' hasHover';
-	}
+	// $('.navbar-brand').on('click', function(){
+	    if (!hasTouch()) {
+	    	document.getElementsByClassName('navbar-brand')[0].className += ' hasHover';
+		}
+	// });
 
 	function hasTouch() {
 	    return 'ontouchstart' in document.documentElement
