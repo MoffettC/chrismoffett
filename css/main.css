@@ -256,7 +256,7 @@ blockquote p {
 	margin-left: 10px;
 }
 
-.navbar-inverse .navbar-brand:hover {
+.navbar-inverse .navbar-brand.hasHover:hover {
 	background: #f4f4f4;
 	color: black;
 	width: 5%;
@@ -452,10 +452,6 @@ blockquote p {
 
 .skills-section h2 {
 	color: white;
-}
-
-.skills-section .skills{
-	/*border: 5px solid black;*/
 }
 
 .skills-section .row {

@@ -34,9 +34,20 @@ $(document).ready(function() {
 	    return $(".tertiary li").length > 5
 	}).addClass('twoColumns');
 
+
+	if (!hasTouch()) {
+	    document.getElementsByClassName('navbar-brand').className += ' hasHover';
+	}
+
+	function hasTouch() {
+	    return 'ontouchstart' in document.documentElement
+	           || navigator.maxTouchPoints > 0
+	           || navigator.msMaxTouchPoints > 0;
+	}
+
 	function watchForHover() {
 	    var hasHoverClass = false;
-	    var container = document.body;
+	    var container = document.getElementsByClassName('navbar-brand');
 	    var lastTouchTime = 0;
 
 	    function enableHover() {
