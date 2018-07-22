@@ -204,13 +204,13 @@ blockquote p {
 	border: 5px solid #F9F3F4;
 }
 
-.icons-list {
+#intro .icons-list {
 	display: inline-block;
 	margin: 5px 0;
 	padding: 0 4vh;
 	width: 100%;
 }
-.icon {
+#intro .icon {
 	width: 25%;
 }
 
@@ -269,7 +269,7 @@ blockquote p {
 
 /*skills section*/
 
-.mid {
+.skills-section {
 	background-color: black;
 	min-height: 50%;
 
@@ -282,7 +282,7 @@ blockquote p {
   	align-items: center;
 }
 
-.mid h1{
+.skills-section h1{
 	margin: 0 auto;
 	padding: 0;
 
@@ -293,15 +293,15 @@ blockquote p {
     font-weight: bold;
 }
 
-.mid h2 {
+.skills-section h2 {
 	color: white;
 }
 
-.mid .skills{
+.skills-section .skills{
 	/*border: 5px solid black;*/
 }
 
-.mid .row {
+.skills-section .row {
 	/*border: 5px solid black;*/
 	margin: 0;
 	padding: 0;
@@ -309,12 +309,12 @@ blockquote p {
 	font-family: 'Raleway', sans-serif;
 }
 /* Clear floats after the columns */
-.mid .row:after {
+.skills-section .row:after {
     content: "";
     clear: both;
 }
 
-.mid .column {
+.skills-section .column {
 	margin: 20px auto;
 	padding: 0;
 
@@ -322,7 +322,7 @@ blockquote p {
     width: 100%;
 }
 
-.mid ul{
+.skills-section ul{
 	margin: auto;
 	padding: 0;
 
@@ -332,7 +332,7 @@ blockquote p {
 	text-align: left;
 }
 
-.mid ul.twoColumns {
+.skills-section ul.twoColumns {
   	list-style: none;
   	text-align: center;
 
@@ -414,6 +414,13 @@ blockquote p {
   	padding: 30px 0px 30px 0px;
 }
 
+.end .list-social-icons {
+	text-align: center;
+	margin: 5px 0;
+	padding: 0;
+	width: 100%;
+}
+
 .end h1{
 	margin: 0 auto;
 	padding: 40px;
@@ -447,6 +454,12 @@ blockquote p {
 	.icons-list {
 		padding-left: 3vh;
 	}
+	#intro .icon {
+		margin: 0;
+	}
+	.end .icon {
+		margin: auto 20px;
+	}
 	.list-social-icons a .fa-lg {
 	  font-size: 1.2rem;
 	}
@@ -463,6 +476,7 @@ blockquote p {
 	}
 	.icon {
 		width: 25%;
+		margin: auto 20px;
 	}
 }
 
@@ -508,21 +522,21 @@ blockquote p {
 	.icon {
 		width: 25%;
 	}
-	.list-social-icons a .fa-lg {
+	#intro .list-social-icons a .fa-lg {
 	  font-size: 1.2rem;
 	}
 
-	.list-icons {
+	#intro .list-icons {
 	  font-size: 1rem;
 	}
 	.leftbio {
 		margin-bottom: 5px;
 	}
-	.mid {
+	.skills-section {
 		margin-top: 54px;
 		/*padding-top: 65px;*/
 	}
-	.mid ul{
+	.skills-section ul{
 		margin: 0;
 		padding: 0;
 
@@ -563,14 +577,20 @@ blockquote p {
 	.rightbio a {
 		font-size: 50%;
 	}
-	.mid ul.twoColumns {
+	.skills-section ul.twoColumns {
     	column-gap: 75px;
 	}
-	.icons-list {
+	#intro .icons-list {
 		padding: 0 3vh;
 		width: 100%;
+		margin: 10px auto;
 	}
-	.icon {
+	#intro .icon {
+		margin: 0;
+		width: 25%;
+	}
+	.end .icon {
+		padding: 0px 40px;
 		width: 25%;
 	}
 /*	.list-social-icons a .fa-lg {
@@ -619,14 +639,20 @@ blockquote p {
 	}
 	.icons-list {
 		padding: 0 ;
+		margin: 0;
 	}
-	.icon {
+	#intro .icon {
+		margin: 0;
 		width: 25%;
 	}
-	.mid .column {
+	.end .icon {
+		margin: 0;
+		width: 25%;
+	}
+	.skills-section .column {
 		margin: 5px auto;
 	}
-	.mid ul.twoColumns {
+	.skills-section ul.twoColumns {
     	column-gap: 70px;
 	}
 	.resume-date {
@@ -638,5 +664,9 @@ blockquote p {
 
 	.list-icons {
 	  font-size: 1rem;
+	}
+	.end .list-social-icons {
+	text-align: center;
+	width: 100%;
 	}
 }

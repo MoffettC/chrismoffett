@@ -19,15 +19,15 @@ $(document).ready(function() {
 	});
 
 //skill columns
-	$('.mid .primary ul').filter(function(){
+	$('.skills-section .primary ul').filter(function(){
 	    return $(".primary li").length > 5
 	}).addClass('twoColumns');
 
-	$('.mid .secondary ul').filter(function(){
+	$('.skills-section .secondary ul').filter(function(){
 	    return $(".secondary li").length > 5
 	}).addClass('twoColumns');
 
-	$('.mid .tertiary ul').filter(function(){
+	$('.skills-section .tertiary ul').filter(function(){
 	    return $(".tertiary li").length > 5
 	}).addClass('twoColumns');
 
