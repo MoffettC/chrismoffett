@@ -2,6 +2,7 @@
 $(document).ready(function() {
 	$('body').addClass('loaded');
 	
+	 $(this).scrollTop(0);
 	$('.nav-link, .navbar-brand, .new-button').click(function() { //jQuery slim version does not support animate!
 		var scrollY = 54;
 
