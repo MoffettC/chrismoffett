@@ -257,9 +257,7 @@ blockquote p {
 }
 
 .navbar-inverse .navbar-brand:hover {
-	background: #f4f4f4;
-	color: red;
-	width: 5%;
+
 }
 
 .navbar-inverse .navbar-brand.hasHover:hover {
