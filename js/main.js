@@ -13,10 +13,12 @@ $(document).ready(function() {
 	    }, 800);
 	});
 
+//collapse navbar links
 	$('.navbar-nav>li>a').on('click', function(){
 	    $('.navbar-collapse').collapse('hide');
 	});
 
+//skill columns
 	$('.mid .primary ul').filter(function(){
 	    return $(".primary li").length > 5
 	}).addClass('twoColumns');
