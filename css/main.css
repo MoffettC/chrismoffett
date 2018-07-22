@@ -10,10 +10,6 @@ html, body {
 	-webkit-text-size-adjust: 100%;
 }
 
-h1 {
-    color: #EEEEEE;
-}
-
 #loader-wrapper {
     position: fixed;
     top: 0;
@@ -150,20 +146,10 @@ h1 {
             transition: all 0.3s 1s ease-out;
 }
     
-/* JavaScript Turned Off */
+/* JavaScript Turned Off this css will be applied*/
 .no-js #loader-wrapper {
     display: none;
 }
-.no-js h1 {
-    color: #222222;
-}
-
-#content {
-    margin: 0 auto;
-    padding-bottom: 50px;
-    width: 80%;
-    max-width: 978px;
-}  
 
 q, blockquote {
     quotes: "\201C" "\201D" "\2018" "\2019";
