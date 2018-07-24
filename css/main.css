@@ -96,8 +96,8 @@ html, body {
     top: 0;
     width: 51%;
     height: 100%;
-    background: #222222;
-    z-index: 1000;
+    background: black;
+    z-index: 1031;
     -webkit-transform: translateX(0);  /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: translateX(0);  /* IE 9 */
     transform: translateX(0);  /* Firefox 16+, IE 10+, Opera */
@@ -126,8 +126,8 @@ html, body {
         -ms-transform: translateX(100%);  /* IE 9 */
             transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
 
--webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
-    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+	-webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+  		transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
 
 .loaded #loader {
@@ -267,7 +267,7 @@ blockquote p {
 }
 
 .navbar-inverse  .nav-link{
-	margin-top: 5px;
+	margin-top: 4px;
 	border-radius: 20px;
 	margin-right: 1em !important;
 }
