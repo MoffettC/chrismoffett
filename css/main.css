@@ -486,7 +486,7 @@ blockquote p {
 	color: white;
 	display: inline-block; /*center list in column*/
 	list-style-type: none; /*remove bullets*/
-	text-align: left;
+  	text-align: center;
 }
 
 .skills-section ul.twoColumns {
