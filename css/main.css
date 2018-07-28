@@ -499,7 +499,7 @@ blockquote p {
     -moz-columns: 2;
 }
 
-/*resume*/
+/*experience*/
 
 .resume-section {
 	margin: 0 auto;
@@ -522,6 +522,9 @@ blockquote p {
 .resume-date {
 	font-size: 95%;
 	color: black;
+}
+.resume-section .marginbot{
+	margin-bottom: 50px;
 }
 
 /*projects*/
@@ -590,6 +593,7 @@ blockquote p {
 	font-size: 100%;
 	line-height: 210%;
 	font-family: sans-serif;
+	text-align: center;
 }
 
 @media screen and (max-width: 992px)  {
