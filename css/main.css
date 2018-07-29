@@ -10,6 +10,10 @@ html, body {
 	-webkit-text-size-adjust: 100%;
 }
 
+.nounderline {
+  text-decoration: none !important
+}
+
 #loader-wrapper {
     position: fixed;
     top: 0;
@@ -831,6 +835,19 @@ blockquote p {
 		margin: 0;
 		width: 25%;
 	}
+	.resume-section h3{
+		/*margin: 0 auto;*/
+		padding-right: 5px;
+		text-align: left;
+		font-size: 150%;
+		font-weight: bold;
+	}
+	.resume-date {
+		text-align: right;
+	}
+	.projects-date {
+		text-align: right;
+	}
 	.end .icon {
 		margin: 0;
 		width: 25%;
@@ -839,7 +856,7 @@ blockquote p {
 		margin: 5px auto;
 	}
 	.skills-section ul.twoColumns {
-    	column-gap: 70px;
+    	column-gap: 50px;
 	}
 	.resume-date {
 		font-size: 80%;
